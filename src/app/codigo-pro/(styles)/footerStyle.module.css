@@ -1,0 +1,3 @@
+.headerGradient {
+    background: linear-gradient(135deg, var(--primary-codigo-pro) 60%, var(--accent-codigo-pro));
+}

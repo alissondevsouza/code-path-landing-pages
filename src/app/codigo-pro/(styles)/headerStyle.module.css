@@ -1,0 +1,42 @@
+.headerGradient {
+    background: linear-gradient(135deg, var(--primary-codigo-pro) 60%, var(--accent-codigo-pro));
+}
+  
+.clipPath {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.badge {
+    background: var(--secondary-codigo-pro);
+    color: var(--dark-codigo-pro);
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    display: inline-block;
+    font-weight: 700;
+    margin: 1rem 0;
+    animation: pulse 2s infinite;
+}
+
+.gradientText {
+    background: linear-gradient(45deg, #00ff88 30%, #00ffee 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+    .clipPath {
+      clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    }
+    
+    .gradientText {
+      background-size: 100% 200%;
+    }
+}  

@@ -36,6 +36,7 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SERVER_SSH_KEY }}
+          port: 49172
           script: |
             cd /containers/infra-code-path/landing-page-code-path
             docker-compose pull

@@ -37,6 +37,6 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd /containers/code-path
+            cd /containers/infra-code-path/landing-page-code-path
             docker-compose pull
             docker-compose up -d --remove-orphans

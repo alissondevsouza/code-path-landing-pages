@@ -39,5 +39,6 @@ jobs:
           port: 49172
           script: |
             cd /containers/infra-code-path/landing-page-code-path
+            echo "${{ secrets.NEXUS_PASSWORD }}" | docker login docker.code-path.tech -u "${{ secrets.NEXUS_USERNAME }}" --password-stdin
             docker-compose pull
             docker-compose up -d --remove-orphans
